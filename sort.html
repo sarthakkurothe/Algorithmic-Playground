@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="./css/common_style.css">
+    <link rel="stylesheet" href="./css/sort_style.css">
+    
+</head>
+<body>
+    
+    <header>
+        <h1>
+            Sortify
+        </h1>
+    </header>
+    <p>
+        <marquee>Sorting algorithms using Graphical and Array approach</marquee>
+        <br>
+    </p>
+
+    <div class="container"> 
+        <div class="bars_container" id="bars_container"> </div>
+        <div class="choice">
+            <div class="buttons_container">
+                <button>
+                    <span style="font-size: 20px;">-</span>&nbsp; &nbsp; &nbsp;RANGE&nbsp; &nbsp; &nbsp;<span style="font-size: 20px;">+</span>
+                    <input type="range" min="10" max="100" id="range" class="range" step="5" value="50">
+                </button>
+                <button>
+                    <span style="font-size: 20px;">+</span>&nbsp; &nbsp; &nbsp;SPEED&nbsp; &nbsp; &nbsp;<span style="font-size: 20px;">-</span>
+                    <input type="range" min="2" max="500" id="speed" class="Speed" value="50">
+                </button>
+                <button id="randomize_array_btn">GENERATE ARRAY</button>
+                <select name="" class="sorting_algos" id="sorting_algos">  
+                    <option value="none" selected disabled hidden>SELECT ALGO</option>
+                    <option value="bubble">BUBBLE SORT</option>
+                    <option value="insertion">INSERTION SORT</option>
+                    <option value="heap">HEAP SORT</option>
+                    <option value="merge">MERGE SORT</option>
+                    <option value="quick">QUICK SORT</option>
+                </select>
+                <button id="sort_btn">SORT</button>
+                <button id="home" class="button">HOME</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contain1">
+            <div class="box_container" id="box_container">
+            </div>
+        </div>
+        
+        <div class="contain2">
+            <div class="user">
+                <input type="text" class="userArray" id="arrayBox" placeholder="ELEMENTS SEPERATED BY (,) - MAX SIZE 15"> 
+                <button id="createArray">CREATE</button>
+            </div>
+           
+            <div class="choice">
+                <div class="buttons_container">
+                   
+                    <button>
+                        <span style="font-size: 20px;">-</span>&nbsp; &nbsp; &nbsp;ARRAY SIZE&nbsp; &nbsp; &nbsp;<span style="font-size: 20px;">+</span>
+                        <input type="range" min="4" max="15" id="rangeBox" class="range" step="1" value="5">
+                    </button>
+                    <button>
+                        <span style="font-size: 20px;">+</span>&nbsp; &nbsp; &nbsp;SPEED&nbsp; &nbsp; &nbsp;<span style="font-size: 20px;">-</span>
+                        <input type="range" min="100" max="2000" id="speedBox" class="Speed" value="2000">
+                    </button>
+                    <button id="randomize_array_btn_box">GENERATE ARRAY</button>
+                    <select name="" class="sorting_algos" id="sorting_algos_box">  
+                        <option value="none" selected disabled hidden>SELECT ALGO</option>
+                        <option value="bubbleBox">BUBBLE SORT</option>
+                        <option value="insertionBox">INSERTION SORT</option>
+                        <option value="heapBox">HEAP SORT</option>
+                        <option value="mergeBox">MERGE SORT</option>
+                        <option value="quickBox">QUICK SORT</option>
+                    </select>
+                    <button id="sort_btn_box">SORT</button>
+                    <button id="home1" class="button">HOME</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./js/sort_script.js"></script>
+    <script src="./js/sort_script2.js"></script>
+</body>
+</html>
